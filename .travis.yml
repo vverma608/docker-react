@@ -6,4 +6,4 @@ before_install:
   - docker build -t vverma/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true de61ee663b44 npm run test
+  - docker run -e CI=true vverma/docker-react npm run test
